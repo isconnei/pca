@@ -49,6 +49,9 @@
   
   section {
     padding: 80px 10%;
+  }
+
+  inicio {
     min-height: 100vh;
   }
   
