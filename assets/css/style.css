@@ -167,3 +167,50 @@
   background: #000;
   opacity: 1;
 }
+.redes-sociales {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+.redes-sociales h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.redes-sociales p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.iconos-redes {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.icono {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: transform 0.3s;
+}
+
+.icono img {
+  width: 32px;
+  height: 32px;
+  filter: grayscale(100%);
+  transition: filter 0.3s;
+}
+
+.icono:hover {
+  transform: scale(1.1);
+}
+
+.icono:hover img {
+  filter: none;
+}
