@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Parque Comunitario Angachilla</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 </head>
 <body>
     <header id="navbar">
@@ -45,6 +47,21 @@
       </div>
     </section>
 
+    <section id="galeria" class="carrusel-section">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./image1.jpeg" alt="Foto 1" /></div>
+            <div class="swiper-slide"><img src="./image1.jpeg" alt="Foto 2" /></div>
+            <div class="swiper-slide"><img src="./image1.jpeg" alt="Foto 3" /></div>
+          </div>
+          <!-- Botones de navegación -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <!-- Paginación -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
     <section id="contacto">
       <h2>Contacto</h2>
       <form>
@@ -54,12 +71,14 @@
         <button type="submit">Enviar</button>
       </form>
     </section>
+
   </main>
 
   <footer>
     <p>&copy; 2025 Mi Empresa. Todos los derechos reservados.</p>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
