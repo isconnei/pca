@@ -119,18 +119,6 @@
     align-items: center;
     justify-content: center;
   }
-  
-  .hero-content {
-    text-align: center;
-  }
-  
-  .logo-main {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 50%;
-    transition: opacity 0.5s ease;
-  }
 
   .carrusel-section {
     padding: 60px 10%;
@@ -213,4 +201,41 @@
 
 .icono:hover img {
   filter: none;
+}
+
+#inicio {
+  position: relative;
+  height: 100vh;
+  background-image: url('../img/image3.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+#inicio::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); /* Oscurece para resaltar el logo */
+  z-index: 1;
+}
+
+.hero-content {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.logo-main {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  padding: 2px;
+  background-color: rgba(255, 255, 255, 0.525);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  object-fit: cover;
 }
